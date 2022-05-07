@@ -1,17 +1,14 @@
-# Matic contracts
+# WebMason Smart Chain Contracts (WMSC Contracts)
+_Based on [Polygon (previously Matic) contracts](https://github.com/maticnetwork/contracts)._
 
-![Build Status](https://github.com/maticnetwork/contracts/workflows/CI/badge.svg)
-
-Ethereum smart contracts that power the [Matic Network](https://matic.network).
+Ethereum smart contracts that power the [WebMason Smart Chain](https://?).
 
 ### Install dependencies with
-
 ```
 npm install
 ```
 
 ### Compile
-
 bor-chain-id for Mainnet = 137
 bor-chain-id for TestnetV4 (Mumbai) = 80001
 
@@ -21,7 +18,6 @@ npm run truffle:compile
 ```
 
 ### Start main chain and side chain
-
 - Start Main chain
 
 ```
@@ -43,7 +39,6 @@ npm run bor:clean
 - Run a bor (our matic chain node) instance.
 
 ### Deploy Contracts
-
 - For local development
 
 ```
@@ -53,7 +48,6 @@ npm run truffle:migrate
 - For a properly initialized set of contracts, follow the instructions [here](./deploy-migrations/README.md).
 
 ### Run tests
-
 ```
 npm test
 ```
