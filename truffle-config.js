@@ -1,6 +1,7 @@
 require('babel-register')
 require('babel-polyfill')
 
+const dotenv = require('dotenv').config();
 const chai = require('chai')
 const chaiAsPromised = require('chai-as-promised')
 chai.use(chaiAsPromised).should()
@@ -50,7 +51,7 @@ module.exports = {
       network_id: '80001',
     },
     goerli: {
-      provider: function() {
+      provider: function () {
         return new HDWalletProvider(
           MNEMONIC,
           `https://goerli.infura.io/v3/${API_KEY}`
@@ -62,7 +63,7 @@ module.exports = {
       skipDryRun: true
     },
     mainnet: {
-      provider: function() {
+      provider: function () {
         return new HDWalletProvider(
           MNEMONIC,
           `https://mainnet.infura.io/v3/${API_KEY}`
